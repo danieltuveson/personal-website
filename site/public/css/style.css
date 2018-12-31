@@ -1,0 +1,11 @@
+body, html {
+   background-image: url("../img/code-background1.jpg");
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.jumbotron { 
+  background-color: rgba(255, 255, 255, .95);
+}
