@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Yellowtail");
-.col-md-offset-right-1 {
-  margin-right: 8.33333333%;
-}
+
 
 /* Main styles */
 body {
   line-height: 24px;
-  font-size: 13px;
+  font-size: 14px;
   color: #333333;
   font-family: "Raleway", sans-serif;
   background-image: url("../img/code-background1.jpg");
@@ -15,29 +13,25 @@ body {
   background-repeat: no-repeat;
 }
 
-.content {
-  background: #fff;
+em {
+  font-style: italic;
+}
+
+.container {
+  align-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 40px;
 }
 
-.main_container {
-  margin-top: 50px;
+.bg-color {
+  background: #f1f1d4;
 }
 
-.bg-gold {
-  background: gold;
-}
 
 /* Navbar styles */
-
 .nav {
   padding: 10px;
-}
-
-li {
-  padding-right: 20px;
 }
 
 .navbar-brand {
@@ -46,15 +40,82 @@ li {
 }
 .nav-item {
   font-size: 1.2em;
+  padding-right: 20px;
 }
 
 
-/* About page styles */
 
-.person_img {
-  max-width: 322px;
+
+/* Home styles */
+#home-text-description {
+  min-height: 322px;
 }
 
-.person_img img {
+.person-img {
+  margin-bottom: 20px;
+}
+
+.person-img img {
   max-width: 100%;
 }
+
+#resume {
+  max-width: 750px;
+  min-width: 500px;
+}
+
+
+/* Resume styles */
+#resume-header {
+  text-align: center;
+}
+
+#resume-download-btn {
+  text-align: right;
+}
+
+.resume-content {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.period-of-employment {
+  float: right;
+}
+
+
+/* Contact */
+#contact .row {
+  text-align: center;
+}
+#contact a { 
+  color: #4286f4; 
+}
+
+.fa-envelope {
+  color: maroon;
+}
+
+.fa-envelope:hover {
+  color: #c40000;
+}
+
+.fa-linkedin {
+  color: navy;
+}
+
+.fa-linkedin:hover {
+  color: #0000ff;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-github:hover {
+  color: #515151;
+}
+
+
+
+
