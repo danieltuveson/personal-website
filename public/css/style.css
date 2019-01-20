@@ -7,10 +7,8 @@ body {
   font-size: 14px;
   color: #333333;
   font-family: "Raleway", sans-serif;
-  background-image: url("../img/code-background1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../img/connectwork.png");
+  background-repeat: repeat;
 }
 
 em {
@@ -115,6 +113,37 @@ em {
 .fa-github:hover {
   color: #515151;
 }
+
+
+/* Portfolio */
+.img-container {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+#portfolio img {
+  max-width: 100%;
+}
+
+#personal-site-img-container {
+  border: 1px dashed black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
