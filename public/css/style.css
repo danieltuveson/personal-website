@@ -86,9 +86,6 @@ em {
 #contact .row {
   text-align: center;
 }
-#contact a { 
-  color: #4286f4; 
-}
 
 .fa-envelope {
   color: maroon;
@@ -116,6 +113,14 @@ em {
 
 
 /* Portfolio */
+#portfolio a { 
+  color: #4286f4; 
+}
+
+.project-container {
+  /*border: 1px solid black;*/
+}
+
 .img-container {
   margin-bottom: 20px;
   max-width: 300px;
@@ -128,17 +133,6 @@ em {
 #personal-site-img-container {
   border: 1px dashed black
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
