@@ -15,6 +15,10 @@ em {
   font-style: italic;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .container {
   align-content: center;
   margin-top: 40px;
@@ -36,9 +40,14 @@ em {
   font-size: 1.5em;
   padding-left: 20px;
 }
+
 .nav-item {
   font-size: 1.2em;
   padding-right: 20px;
+}
+
+button:focus, button:active {
+  outline: 0;
 }
 
 
@@ -117,10 +126,6 @@ em {
   color: #4286f4; 
 }
 
-.project-container {
-  /*border: 1px solid black;*/
-}
-
 .img-container {
   margin-bottom: 20px;
   max-width: 300px;
@@ -134,11 +139,12 @@ em {
   border: 1px dashed black
 }
 
+#coming-soon-description p:nth-child(1) {
+  text-align: center;
+}
 
-
-
-
-
-
+.row-margin {
+  margin-bottom: 20px;
+}
 
 
