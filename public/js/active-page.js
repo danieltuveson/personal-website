@@ -9,9 +9,7 @@ const isPage = (regex) => {
 const getCurrentPage = (url) => {
   let currentPage;
 
-  if (isPage(/about/i)) {
-    currentPage = 'about';
-  } else if (isPage(/resume/i)) {
+  if (isPage(/resume/i)) {
     currentPage = 'resume';
   } else if (isPage(/portfolio/i)) {
     currentPage = 'portfolio';

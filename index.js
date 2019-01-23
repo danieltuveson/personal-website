@@ -1,14 +1,31 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
 const handlebars = require('express-handlebars');
 
+const nodemailer = require('nodemailer');
+const sendMail = require('./send-mail.js');
+const mailerKeys = require('./keys.js');
 
+// Setup
 const app = express();
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
+app.use(bodyParser.json());
+
+// Used for nodemailer
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: mailerKeys.user,
+    pass: mailerKeys.pass
+  }
+});
 
 
-app.get('/', (req, res) =>{
+// Routes 
+app.get('/', (req, res) => {
   res.render('home');
 });
 
@@ -22,6 +39,16 @@ app.get('/portfolio', (req, res) => {
 
 app.get('/contact', (req, res) => {
   res.render('contact');
+});
+
+app.post('/contact', (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const subject = req.body.subject;
+  const message = req.body.message;
+  sendMail(transporter, name, email, subject, message);
+  res.json(`Here\'s what u sent me bro: ${name}, ${email}, ${subject}, ${message}`);
+
 });
 
 app.use(express.static(__dirname + '/public'));

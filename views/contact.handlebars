@@ -1,39 +1,104 @@
 <div id="contact" class="container bg-color">
   <h2>Contact</h2>
+
+  <hr>
+
   <div class="row">
-    <div class="col-md-4">
-      <p>
-        Reach me by email:<br>
-        <a href="mailto:danieltuveson@gmail.com">danieltuveson@gmail.com</a>
-        <br>
-        <a href="mailto:danieltuveson@gmail.com">
-          <i class="fas fa-envelope fa-7x"></i>
-        </a>
-      </p>
+
+    <!-- Contact form -->
+    <div id="contact-form-container" class="col-md-8 margin-bottom-20">
+      
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div id="form-title">
+              <h3>Send me a message:</h3>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="form-name">Name</label>
+            <input id="form-name" class="form-control" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="form-email">Email address</label>
+            <input id="form-email" type="email" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="form-subject">Subject</label>
+            <input id="form-subject" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" class="form-control" rows="3" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <!-- shows after submission -->
+      <div id="form-thanks" hidden>
+        <h3>Message Received!</h3>
+        <p>
+          Thanks for reaching out! I'll get back to you as quickly as I can.
+        </p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <p>
-        Connect on LinkedIn:<br>
-        <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
-          linkedin.com/in/daniel-tuveson
-        </a>
-        <br>
-        <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
-          <i class="fab fa-linkedin fa-7x"></i>
-        </a>
-      </p>
+
+    <!-- Social media --> 
+    <div id="social-media" class="col-md-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="social-box">
+            <p>
+              Reach me by email:<br>
+              <a href="mailto:danieltuveson@gmail.com">danieltuveson@gmail.com</a>
+              <br>
+              <a href="mailto:danieltuveson@gmail.com">
+                <i class="fas fa-envelope fa-5x"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="social-box">
+            <p>
+              Connect on LinkedIn:<br>
+              <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
+                linkedin.com/in/daniel-tuveson
+              </a>
+              <br>
+              <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
+                <i class="fab fa-linkedin fa-5x"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="social-box">
+            <p>
+              Follow me on GitHub:<br>
+              <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
+                github.com/danieltuveson
+              </a>
+              <br>
+              <a target="_blank" href="https://github.com/danieltuveson">
+                <i class="fab fa-github fa-5x"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4">
-      <p>
-        Follow me on GitHub:<br>
-        <a target="_blank" href="https://www.linkedin.com/in/daniel-tuveson/">
-          github.com/danieltuveson
-        </a>
-        <br>
-        <a target="_blank" href="https://github.com/danieltuveson">
-          <i class="fab fa-github fa-7x"></i>
-        </a>
-      </p>
-    </div>
+
   </div>
 </div>

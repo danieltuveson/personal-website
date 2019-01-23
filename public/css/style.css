@@ -19,6 +19,10 @@ em {
   text-align: center;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
 .container {
   align-content: center;
   margin-top: 40px;
@@ -58,10 +62,6 @@ button:focus, button:active {
   min-height: 322px;
 }
 
-.person-img {
-  margin-bottom: 20px;
-}
-
 .person-img img {
   max-width: 100%;
 }
@@ -93,6 +93,35 @@ button:focus, button:active {
 
 /* Contact */
 #contact .row {
+  justify-content: center;
+}
+
+#contact-form-content {
+  max-width: 600px;
+}
+
+#contact-form-container .form-group {
+  font-size: 20px;
+}
+
+#contact button {
+  color: white;
+  background: maroon;
+}
+
+#contact button:hover {
+  background: #c40000;
+}
+
+#social-media {
+  max-width: 250px;
+}
+
+.social-box {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -136,15 +165,11 @@ button:focus, button:active {
 }
 
 #personal-site-img-container {
-  border: 1px dashed black
+  border: 1px solid #939373;
 }
 
 #coming-soon-description p:nth-child(1) {
   text-align: center;
-}
-
-.row-margin {
-  margin-bottom: 20px;
 }
 
 
