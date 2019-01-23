@@ -1,8 +1,8 @@
 const sendMail = (transporter, name, email, subject, message) => {
   const mail = {
-    from: `name <${email}>`,
+    from: `${name} <daniel.tuveson.site@gmail.com>`,
     to: 'dtuveson@sas.upenn.edu',
-    subject: subject,
+    subject: `from: ${email}, subject: ${subject}`,
     text: message
   }
 
