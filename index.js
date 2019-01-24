@@ -5,7 +5,7 @@ const handlebars = require('express-handlebars');
 
 const nodemailer = require('nodemailer');
 const sendMail = require('./send-mail.js');
-const mailerKeys = require('./keys.js');
+const mailerKeys = process.env.HEROKU ? require('./keys-heroku') : require('./keys.js');
 
 // Setup
 const app = express();
