@@ -47,8 +47,6 @@ app.post('/contact', (req, res) => {
   const subject = req.body.subject;
   const message = req.body.message;
   sendMail(transporter, name, email, subject, message);
-  res.json(`Here\'s what u sent me bro: ${name}, ${email}, ${subject}, ${message}`);
-
 });
 
 app.use(express.static(__dirname + '/public'));
