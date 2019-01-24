@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: mailerKeys.user,
-    pass: mailerKeys.pass
+    user: process.env.MAIL_USER || mailerKeys.user,
+    pass: process.env.MAIL_PASS || mailerKeys.pass
   }
 });
 
